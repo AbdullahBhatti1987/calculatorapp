@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Calculator by Abdullah Bhatti</h1>
+    </div>
+    <div class="mobile">
+        <div class="screentop">
+            <p>
+                <span id="hour"></span>
+                <span>:</span>
+                <span id="minute"></span>
+                <span id="ampm"></span>
+            </p>
+        </div>
+        <div class="result">
+            <p id="result0">0</p>
+            <p id="result1">0</p>
+        </div>
+        <div class="keys">
+            <div class="row">
+                <button type="button" class="gray" onclick="reset()">AC</button>
+                <button type="button" class="gray" onclick="plusminus()">+/-</button>
+                <button type="button" class="gray" onclick="percentage()">%</button>
+                <button type="button" class="orange" onclick="math('/')">/</button>
+            </div>
+            <div class="row">
+                <button type="button" class="darkgray" onclick="num(7)">7</button>
+                <button type="button" class="darkgray" onclick="num(8)">8</button>
+                <button type="button" class="darkgray" onclick="num(9)">9</button>
+                <button type="button" class="orange" onclick="math('*')">X</button>
+            </div>
+            <div class="row">
+                <button type="button" class="darkgray" onclick="num(4)">4</button>
+                <button type="button" class="darkgray" onclick="num(5)">5</button>
+                <button type="button" class="darkgray" onclick="num(6)">6</button>
+                <button type="button" class="orange" onclick="math('-')">-</button>
+            </div>
+            <div class="row">
+                <button type="button" class="darkgray" onclick="num(1)">1</button>
+                <button type="button" class="darkgray" onclick="num(2)">2</button>
+                <button type="button" class="darkgray" onclick="num(3)">3</button>
+                <button type="button" class="orange" onclick="math('+')">+</button>
+            </div>
+            <div class="row">
+                <button type="button" class="darkgray zero" onclick="num(0)">0</button>
+                <button type="button" class="darkgray" onclick="dot('.')">.</button>
+                <button type="button" class="orange" onclick="enter()">=</button>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="line"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
